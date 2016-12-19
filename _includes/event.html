@@ -9,7 +9,7 @@
     <h2 class="event-title">{{ event.title }}</h2>
     <h3 class="event-title subtitle">{{ event.subtitle }}</h3>
     <p class="event-info">{{ event.description_html }}</p>
-    {% unless event.rsvp_link == blank %}
+    {% unless event.rsvp_link != blank %}
     <a class="button w-button" href="{{ event.rsvp_link }}">RSVP</a>
     {% endunless %}
     <p class="event-location">{{ event.location }}</p>
