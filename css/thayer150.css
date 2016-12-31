@@ -504,28 +504,42 @@ strong {
   padding: 5px 15px;
   float: none;
   background-color: #81b649;
-  -webkit-transition: none 0ms ease;
-  transition: none 0ms ease;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
 }
 
 .give-button.price:hover {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .give-button.price.other {
   display: block;
   margin-right: 4px;
   margin-left: 4px;
-  -webkit-transition: none 0ms ease;
-  transition: none 0ms ease;
+}
+
+.give-button.price.other:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 .give-button.one-time {
   padding: 15px 20px 20px;
   background-color: #194e29;
   box-shadow: none;
+  -webkit-transition: none 0ms ease;
+  transition: none 0ms ease;
+}
+
+.give-button.one-time:hover {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 .give-button-block {
