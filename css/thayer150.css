@@ -971,6 +971,12 @@ strong {
     font-size: 14px;
     line-height: 14px;
   }
+  .give-button.price {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
   .give-button-block {
     padding-top: 20px;
     padding-bottom: 20px;
