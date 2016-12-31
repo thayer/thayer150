@@ -693,6 +693,10 @@ strong {
   text-align: center;
 }
 
+.thankyou.hide {
+  display: none;
+}
+
 .share-link-text {
   font-family: 'Cera pro bold', sans-serif;
 }
