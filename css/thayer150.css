@@ -263,7 +263,7 @@ strong {
 }
 
 .page-sub {
-  margin-top: 81px;
+  margin-top: 90px;
   padding: 50px;
   background-color: #fafafa;
   font-weight: 400;
@@ -500,12 +500,32 @@ strong {
 
 .give-button.price {
   display: inline-block;
-  margin-top: 8px;
-  margin-right: 4px;
-  margin-left: 4px;
+  margin: 8px 4px 0px;
   padding: 5px 15px;
   float: none;
+  background-color: #81b649;
+  -webkit-transition: none 0ms ease;
+  transition: none 0ms ease;
+}
+
+.give-button.price:hover {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+.give-button.price.other {
+  display: block;
+  margin-right: 4px;
+  margin-left: 4px;
+  -webkit-transition: none 0ms ease;
+  transition: none 0ms ease;
+}
+
+.give-button.one-time {
+  padding: 15px 20px 20px;
   background-color: #194e29;
+  box-shadow: none;
 }
 
 .give-button-block {
@@ -677,6 +697,14 @@ strong {
   font-family: 'Cera pro bold', sans-serif;
 }
 
+.share-block {
+  display: none;
+}
+
+.spread-the-word {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .bg-video {
     background-image: url('../images/microsite-mobile-static-image.jpg');
@@ -736,6 +764,10 @@ strong {
     font-size: 16px;
     line-height: 16px;
   }
+  .give-button.one-time {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   .history-timeline-links {
     width: 22%;
   }
@@ -757,9 +789,6 @@ strong {
 @media (max-width: 767px) {
   body {
     background-color: #fafafa;
-  }
-  h3 {
-    text-align: center;
   }
   .bg-video {
     margin-bottom: 70px;
@@ -802,7 +831,7 @@ strong {
     text-align: center;
   }
   .nav-sub {
-    position: static;
+    position: absolute;
   }
   .nav-logo {
     display: none;
@@ -820,8 +849,8 @@ strong {
     text-align: center;
   }
   .page-sub {
-    margin-top: -25px;
-    padding: 30px 0px;
+    margin-top: 150px;
+    padding: 0px 0px 30px;
     background-color: transparent;
   }
   .event-info {
@@ -844,6 +873,10 @@ strong {
   }
   .event-nav-month {
     width: 13%;
+  }
+  .give-button.one-time {
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .timeline-event {
     left: 0px;
@@ -891,9 +924,6 @@ strong {
     font-size: 36px;
     line-height: 38px;
   }
-  h3 {
-    text-align: center;
-  }
   li {
     font-size: 18px;
   }
@@ -932,11 +962,12 @@ strong {
     margin-bottom: 5px;
   }
   .nav-sub {
+    position: fixed;
     padding-right: 0px;
     padding-left: 0px;
   }
   .page-sub {
-    margin-top: -35px;
+    margin-top: 135px;
   }
   .event-cal-block {
     display: block;
@@ -972,10 +1003,17 @@ strong {
     line-height: 14px;
   }
   .give-button.price {
-    padding-right: 10px;
-    padding-left: 10px;
+    margin-bottom: 3px;
+    padding-right: 12px;
+    padding-left: 12px;
     font-size: 16px;
     line-height: 22px;
+  }
+  .give-button.price.other {
+    margin-bottom: 5px;
+  }
+  .give-button.one-time {
+    padding: 9px;
   }
   .give-button-block {
     padding-top: 20px;
