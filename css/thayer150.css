@@ -500,7 +500,7 @@ strong {
 
 .give-button.price {
   display: inline-block;
-  margin: 8px 4px 0px;
+  margin: 8px 4px 4px;
   padding: 5px 15px;
   float: none;
   background-color: #81b649;
@@ -518,6 +518,7 @@ strong {
 
 .give-button.price.other {
   display: block;
+  margin-top: 4px;
   margin-right: 4px;
   margin-left: 4px;
 }
@@ -1021,14 +1022,11 @@ strong {
     line-height: 14px;
   }
   .give-button.price {
-    margin-bottom: 3px;
+    margin-top: 4px;
     padding-right: 12px;
     padding-left: 12px;
     font-size: 16px;
     line-height: 22px;
-  }
-  .give-button.price.other {
-    margin-bottom: 5px;
   }
   .give-button.one-time {
     padding: 9px;
