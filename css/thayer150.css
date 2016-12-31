@@ -339,8 +339,12 @@ strong {
 
 .event-title.subtitle {
   margin-top: -5px;
+  margin-bottom: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   font-family: 'Cera pro medium', sans-serif;
   font-weight: 400;
+  text-align: left;
 }
 
 .month {
