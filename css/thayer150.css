@@ -758,6 +758,9 @@ strong {
   body {
     background-color: #fafafa;
   }
+  h3 {
+    text-align: center;
+  }
   .bg-video {
     margin-bottom: 70px;
   }
@@ -888,6 +891,9 @@ strong {
     font-size: 36px;
     line-height: 38px;
   }
+  h3 {
+    text-align: center;
+  }
   li {
     font-size: 18px;
   }
@@ -964,6 +970,10 @@ strong {
   .event-nav-month {
     font-size: 14px;
     line-height: 14px;
+  }
+  .give-button-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .history-timeline-links {
     width: 45%;
