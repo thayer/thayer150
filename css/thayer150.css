@@ -44,15 +44,28 @@ h4 {
 
 p {
   margin-bottom: 10px;
+  line-height: 24px;
 }
 
 a {
+  font-family: 'Cera pro medium', sans-serif;
   color: #81b649;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  border-radius: 3px;
 }
 
 strong {
@@ -181,6 +194,7 @@ strong {
 }
 
 .logo {
+  border-radius: 0px;
   -webkit-transition: -webkit-transform 200ms ease;
   transition: -webkit-transform 200ms ease;
   transition: transform 200ms ease;
@@ -225,6 +239,7 @@ strong {
 
 .nav-logo {
   height: 175px;
+  border-radius: 0px;
   -webkit-transition: -webkit-transform 200ms ease;
   transition: -webkit-transform 200ms ease;
   transition: transform 200ms ease;
@@ -365,7 +380,7 @@ strong {
   text-align: center;
 }
 
-.button {
+.shareformbuttom {
   margin-bottom: 10px;
   padding: 10px 20px;
   border-radius: 3px;
@@ -378,12 +393,12 @@ strong {
   font-weight: 400;
 }
 
-.button:hover {
+.shareformbuttom:hover {
   background-color: #194e29;
   text-decoration: none;
 }
 
-.button.share {
+.shareformbuttom.sharebuttom {
   font-size: 17px;
   line-height: 25px;
   text-align: center;
@@ -450,11 +465,6 @@ strong {
   text-decoration: none;
 }
 
-.month-nav-holder {
-  display: block;
-  height: 0px;
-}
-
 .video {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -463,6 +473,7 @@ strong {
 .give-button {
   display: inline-block;
   margin-right: auto;
+  margin-bottom: 5px;
   margin-left: auto;
   padding: 15px 25px;
   border-radius: 3px;
@@ -483,16 +494,29 @@ strong {
   text-decoration: none;
 }
 
+.give-button.price {
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 4px;
+  margin-left: 4px;
+  padding: 5px 15px;
+  float: none;
+  background-color: #194e29;
+}
+
 .give-button-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
 .button-top {
   margin-top: 3px;
   font-family: 'Cera pro', sans-serif;
-  color: #11223c;
+  color: #194e29;
   font-size: 16px;
   line-height: 16px;
 }
@@ -560,7 +584,7 @@ strong {
 
 .mapimg {
   display: block;
-  margin: 50px auto;
+  margin: 40px auto 50px;
 }
 
 .chart {
@@ -577,15 +601,76 @@ strong {
 }
 
 .photo-vision-item {
-  width: 30%;
+  width: 25%;
   float: left;
   border-radius: 3px;
 }
 
 .photo-vision-cap {
-  margin-left: 30%;
+  margin-left: 25%;
   padding-left: 40px;
   color: rgba(17, 34, 60, .8);
+}
+
+.hompagetitle {
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.thayer-photo {
+  width: 34%;
+  float: right;
+}
+
+.hometext {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.hometext.home-test-top {
+  width: 100%;
+}
+
+.hometext.text-quote {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-left: 6px solid rgba(17, 34, 60, .9);
+  font-family: 'Cera pro medium', sans-serif;
+}
+
+.vision-list-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-share-link-page {
+  margin-top: 20px;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.share-button-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.thankyou {
+  text-align: center;
+}
+
+.share-link-text {
+  font-family: 'Cera pro bold', sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -597,6 +682,9 @@ strong {
   }
   .full-video {
     display: none;
+  }
+  .footer {
+    height: 150px;
   }
   .homepage-logo {
     height: 350px;
@@ -651,6 +739,15 @@ strong {
     margin-top: 10px;
     text-align: center;
   }
+  .photo-vision-item {
+    width: 30%;
+  }
+  .photo-vision-cap {
+    margin-left: 30%;
+  }
+  .hometext.bottom {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -661,11 +758,14 @@ strong {
     margin-bottom: 70px;
   }
   .sontent-section {
-    margin-top: -90px;
+    margin-top: -70px;
   }
   .content {
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .footer {
+    height: 100px;
   }
   .homepage-logo {
     position: absolute;
@@ -744,6 +844,39 @@ strong {
   .history-timeline-links {
     width: 45%;
   }
+  .photo-vision-item {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    float: none;
+  }
+  .photo-vision-cap {
+    margin-bottom: 0px;
+    margin-left: 0%;
+    padding-left: 0px;
+  }
+  .hompagetitle {
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 19px;
+    text-align: center;
+  }
+  .thayer-photo {
+    display: block;
+    width: 60%;
+    margin: 0px auto 30px;
+    padding-left: 0px;
+    float: none;
+  }
+  .hometext {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -758,7 +891,10 @@ strong {
     margin-bottom: 120px;
   }
   .sontent-section {
-    margin-top: -140px;
+    margin-top: -120px;
+  }
+  .footer {
+    height: 150px;
   }
   .homepage-logo {
     height: 225px;
@@ -834,6 +970,25 @@ strong {
   .button-side {
     padding-right: 0px;
     padding-left: 0px;
+  }
+  .mapimg {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .photo-vision {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 25px;
+  }
+  .photo-vision-item {
+    width: 100%;
+  }
+  .photo-vision-cap {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .thayer-photo {
+    width: 100%;
   }
 }
 
