@@ -519,7 +519,7 @@ strong {
 
 .give-button.price.other {
   display: block;
-  margin-top: 4px;
+  margin-top: 8px;
   margin-right: 4px;
   margin-left: 4px;
 }
@@ -1008,6 +1008,7 @@ strong {
     font-family: 'Cera pro bold', sans-serif;
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
   }
   .thayer-logo {
     padding-right: 15px;
