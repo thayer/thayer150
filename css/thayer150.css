@@ -49,7 +49,7 @@ p {
 
 a {
   font-family: 'Cera pro medium', sans-serif;
-  color: #81b649;
+  color: #61922e;
   text-decoration: none;
 }
 
@@ -120,7 +120,7 @@ strong {
 }
 
 .footer {
-  height: 160px;
+  height: 150px;
 }
 
 .homepage-logo {
@@ -176,9 +176,14 @@ strong {
 }
 
 .body {
+  background-color: #fafafa;
   font-family: 'Cera pro', sans-serif;
   font-size: 18px;
   line-height: 24px;
+}
+
+.body.thank-you-page-body {
+  background-color: #194e29;
 }
 
 .nav-menu {
@@ -504,7 +509,7 @@ strong {
   margin: 8px 4px 4px;
   padding: 5px 15px;
   float: none;
-  background-color: #81b649;
+  background-color: #194e29;
   -webkit-transition: -webkit-transform 200ms ease;
   transition: -webkit-transform 200ms ease;
   transition: transform 200ms ease;
@@ -531,8 +536,8 @@ strong {
 }
 
 .give-button.one-time {
-  padding: 15px 20px 20px;
-  background-color: #194e29;
+  padding: 15px 30px 20px;
+  background-color: #81b649;
   box-shadow: none;
   -webkit-transition: none 0ms ease;
   transition: none 0ms ease;
@@ -553,9 +558,17 @@ strong {
   text-align: center;
 }
 
+.give-button-block.onetime {
+  margin-top: 24px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 3px;
+  background-color: #eff0f1;
+}
+
 .button-top {
   margin-top: 3px;
-  font-family: 'Cera pro', sans-serif;
+  font-family: 'Cera pro medium', sans-serif;
   color: #194e29;
   font-size: 16px;
   line-height: 16px;
@@ -566,6 +579,12 @@ strong {
   font-family: 'Cera pro bold', sans-serif;
   font-size: 35px;
   line-height: 35px;
+}
+
+.button-bottom.one-time {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 33px;
 }
 
 .timeline-event {
@@ -713,16 +732,27 @@ strong {
   display: none;
 }
 
+.thankyou.title {
+  margin-bottom: 40px;
+}
+
 .share-link-text {
   font-family: 'Cera pro bold', sans-serif;
 }
 
 .share-block {
-  display: none;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .spread-the-word {
   display: none;
+}
+
+.gift-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #eff0f1;
 }
 
 @media (max-width: 991px) {
@@ -734,9 +764,6 @@ strong {
   }
   .full-video {
     display: none;
-  }
-  .footer {
-    height: 150px;
   }
   .homepage-logo {
     height: 350px;
@@ -788,6 +815,9 @@ strong {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .button-bottom.one-time {
+    font-size: 33px;
+  }
   .history-timeline-links {
     width: 22%;
   }
@@ -819,6 +849,9 @@ strong {
   .content {
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .content.thanks {
+    padding-bottom: 30px;
   }
   .footer {
     height: 100px;
@@ -870,8 +903,13 @@ strong {
   }
   .page-sub {
     margin-top: 150px;
-    padding: 0px 0px 30px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
     background-color: transparent;
+  }
+  .page-sub.onetime {
+    padding-bottom: 0px;
   }
   .event-info {
     font-size: 16px;
@@ -897,6 +935,12 @@ strong {
   .give-button.one-time {
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .give-button-block.onetime {
+    border-radius: 0px;
+  }
+  .button-bottom.one-time {
+    font-size: 33px;
   }
   .timeline-event {
     left: 0px;
@@ -936,6 +980,9 @@ strong {
     margin-bottom: 30px;
     padding-right: 0px;
     padding-left: 0px;
+  }
+  .share-block {
+    padding-top: 0px;
   }
 }
 
@@ -999,16 +1046,11 @@ strong {
   .event-info-block {
     top: 0px;
     margin-left: 0px;
-    text-align: center;
-  }
-  .event-title {
-    text-align: center;
   }
   .event-title.subtitle {
     font-family: 'Cera pro bold', sans-serif;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
   }
   .thayer-logo {
     padding-right: 15px;
@@ -1023,6 +1065,10 @@ strong {
     font-size: 14px;
     line-height: 14px;
   }
+  .give-button {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   .give-button.price {
     margin-top: 4px;
     padding-right: 12px;
@@ -1036,6 +1082,13 @@ strong {
   .give-button-block {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .give-button-block.onetime {
+    padding: 25px;
+  }
+  .button-bottom.one-time {
+    font-size: 27px;
+    line-height: 28px;
   }
   .history-timeline-links {
     width: 45%;
@@ -1065,6 +1118,9 @@ strong {
   }
   .thayer-photo {
     width: 100%;
+  }
+  .gift-section {
+    padding: 10px;
   }
 }
 
