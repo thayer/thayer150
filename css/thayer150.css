@@ -120,7 +120,9 @@ strong {
 }
 
 .footer {
-  height: 150px;
+  padding-top: 40px;
+  padding-bottom: 165px;
+  background-color: #eeeff1;
 }
 
 .homepage-logo {
@@ -303,6 +305,10 @@ strong {
   text-decoration: underline;
 }
 
+.footer-link.homefooterlink {
+  color: rgba(17, 34, 60, .8);
+}
+
 .footer-row-sub {
   margin-top: 30px;
 }
@@ -420,7 +426,7 @@ strong {
 
 .thayer-logo {
   padding-right: 100px;
-  padding-left: 25px;
+  padding-left: 0px;
   -webkit-transition: -webkit-transform 200ms ease;
   transition: -webkit-transform 200ms ease;
   transition: transform 200ms ease;
@@ -435,6 +441,13 @@ strong {
   font-size: 14px;
   line-height: 24px;
   font-weight: 100;
+}
+
+.address.homeaddress {
+  padding-top: 2px;
+  padding-right: 0px;
+  padding-left: 0px;
+  color: rgba(17, 34, 60, .8);
 }
 
 .event-nav {
@@ -742,7 +755,7 @@ strong {
 
 .share-block {
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .spread-the-word {
@@ -764,6 +777,10 @@ strong {
   }
   .full-video {
     display: none;
+  }
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 145px;
   }
   .homepage-logo {
     height: 350px;
@@ -799,13 +816,17 @@ strong {
     line-height: 24px;
   }
   .thayer-logo {
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .address {
     padding-right: 35px;
     padding-left: 35px;
     line-height: 20px;
+  }
+  .address.homeaddress {
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .event-nav-month {
     font-size: 16px;
@@ -855,6 +876,8 @@ strong {
   }
   .footer {
     height: 100px;
+    padding-top: 10px;
+    padding-bottom: 320px;
   }
   .homepage-logo {
     position: absolute;
@@ -920,14 +943,19 @@ strong {
     line-height: 22px;
   }
   .thayer-logo {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
   .address {
     padding-top: 15px;
     padding-right: 25px;
     padding-left: 25px;
     line-height: 23px;
+    text-align: center;
+  }
+  .address.homeaddress {
+    padding-top: 10px;
+    text-align: center;
   }
   .event-nav-month {
     width: 13%;
@@ -1002,6 +1030,7 @@ strong {
   }
   .footer {
     height: 150px;
+    padding-top: 0px;
   }
   .homepage-logo {
     height: 225px;
@@ -1059,7 +1088,14 @@ strong {
   .address {
     padding-right: 15px;
     padding-left: 15px;
+    font-size: 13px;
+    line-height: 21px;
     text-align: center;
+  }
+  .address.homeaddress {
+    padding-top: 12px;
+    font-size: 12px;
+    line-height: 20px;
   }
   .event-nav-month {
     font-size: 14px;
